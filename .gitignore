@@ -10,3 +10,6 @@ feign/mvnw
 *.jar
 feign/.mvn/wrapper/maven-wrapper.properties
 feign/.mvn/wrapper/MavenWrapperDownloader.java
+config-client/.mvn/wrapper/maven-wrapper.jar
+*.gitignore
+config-server/mvnw

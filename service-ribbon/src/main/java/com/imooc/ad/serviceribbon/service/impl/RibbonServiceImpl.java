@@ -1,6 +1,7 @@
 package com.imooc.ad.serviceribbon.service.impl;
 
 import com.imooc.ad.serviceribbon.service.RibbonService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -16,7 +17,12 @@ public class RibbonServiceImpl implements RibbonService {
     RestTemplate restTemplate;
 
     @Override
+    @HystrixCommand(fallbackMethod = "helloError")
     public String hello() {
         return restTemplate.getForObject("http://eureka-client/hello", String.class);
+    }
+
+    public String helloError() {
+        return "断路器起作用返回固定值！";
     }
 }
