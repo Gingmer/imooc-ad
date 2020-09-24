@@ -4,3 +4,9 @@ service-ribbon/mvnw.cmd
 service-ribbon/.mvn/wrapper/maven-wrapper.jar
 service-ribbon/.mvn/wrapper/maven-wrapper.properties
 service-ribbon/.mvn/wrapper/MavenWrapperDownloader.java
+feign/.gitignore
+feign/mvnw
+*.cmd
+*.jar
+feign/.mvn/wrapper/maven-wrapper.properties
+feign/.mvn/wrapper/MavenWrapperDownloader.java
