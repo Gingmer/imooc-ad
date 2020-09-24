@@ -6,6 +6,7 @@
         <groupId>com.imooc.ad</groupId>
         <artifactId>config-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../config-parent/pom.xml</relativePath>
     </parent>
     <artifactId>config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -16,7 +17,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
-            <version>2.2.5.RELEASE</version>
+            <version>${spring-config.verson}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
